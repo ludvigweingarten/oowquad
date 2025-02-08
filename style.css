@@ -114,3 +114,34 @@ body.loaded {
     margin-block-start: 0; /* Removes top margin */
     margin-block-end: 0;   /* Removes bottom margin */
 }
+
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Adjust font size for mobile */
+    }
+
+    .gallery-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: auto;
+        height: 100vh;
+        gap: 10vh; /* Increased gap for more space between rows */
+        padding: 20px 10px; /* Added vertical padding */
+    }
+
+    .image-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Increased spacing between images */
+        min-height: auto;
+        padding: 5vh 0; /* Added more space above and below each row */
+    }
+
+    .image-item img {
+        width: auto;
+        max-width: 90vw;
+        max-height: 13vh; /* Ensure images fit within viewport height */
+    }
+}
