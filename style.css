@@ -11,7 +11,6 @@ body {
     font-family: 'StyreneA', helvetica, sans-serif; 
     margin: 0;
     font-size: 19px;
-    font-weight: bold;
     background-color: #ffffff;
     opacity: 0;
     transition: opacity 0.5s ease-in;
@@ -26,7 +25,6 @@ body.loaded {
     position: fixed;
     width: 100%;
     padding: 20px 0px;
-    font-weight: bold;
     height: 220px;
     opacity: 0;
     transition: opacity 0.5s ease-in 0.5s;
@@ -42,7 +40,6 @@ body.loaded {
     position: fixed;
     width: 100%;
     padding: 10px 0px;
-    font-weight: bold;
     transition: opacity 0.5s ease-in 0.5s;
     z-index: 3;
     visibility: hidden;
