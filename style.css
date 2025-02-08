@@ -123,8 +123,8 @@ body.loaded {
         align-items: center;
         overflow-y: auto;
         height: 100vh;
-        gap: 10vh; /* Increased gap for more space between rows */
-        padding: 20px 10px; /* Added vertical padding */
+        gap: 2vh; /* Increased gap for more space between rows */
+        padding: 5vh 0; /* Top and bottom margin */
     }
 
     .image-row {
