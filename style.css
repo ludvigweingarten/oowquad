@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'StyreneA';
+    src: url('assets/StyreneA-Medium.woff2') format('woff2'),
+         url('assets/StyreneA-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'StyreneA', helvetica, sans-serif; 
+    margin: 0;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    overflow-x: hidden;
+}
+
+body.loaded {
+    opacity: 1;
+}.main-header {
+    text-align: center;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    padding: 20px 0px;
+    font-weight: bold;
+    height: 220px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in 0.5s;
+    z-index: 3;
+    background: linear-gradient(to bottom, white 30%, transparent); 
+    pointer-events: none;
+    margin-bottom: 5px; 
+}.main-header.show {
+    opacity: 1;
+}.header {
+    text-align: center;
+    top: 205px; 
+    position: fixed;
+    width: 100%;
+    padding: 10px 0px;
+    font-weight: bold;
+    transition: opacity 0.5s ease-in 0.5s;
+    z-index: 3;
+    visibility: hidden;
+}.gallery-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10vh;
+    padding: 20px;
+    background-color: #ffffff;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    padding-top: calc(50vh - (50vh / 2));
+    padding-bottom: calc(50vh - (50vh / 2));
+    box-sizing: border-box;
+}.image-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    scroll-snap-align: center;
+    min-height: 50vh;
+}.image-row.show {
+    opacity: 1;
+}.image-item {
+    box-sizing: border-box;
+}.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}.caption {
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.4;
+}.caption-secondary {
+    font-size: smaller;
+    color: #777;
+}.plus-sign {
+    position: fixed;
+    top: 19px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 5;
+    transition: transform 0.3s ease-in-out;
+}.plus-sign.rotate {
+  transform: rotate(-45deg);
+}.plus-sign img { /* Target the SVG image */
+  width: 25px; /* Adjust size as needed */
+  height: auto;
+}.about-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 90px);
+    background: linear-gradient(to bottom, white 30%, transparent);
+    padding: 20px;
+    z-index: 4;
+    transform: translateY(-100%); /* Initially hidden above the viewport */
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth drop-down */
+}.about-section.show {
+    transform: translateY(0); /* Slide down to its normal position */
+}
+.about-section p {
+    padding: 0px;
+    margin: 0px;
+    margin-block-start: 0; /* Removes top margin */
+    margin-block-end: 0;   /* Removes bottom margin */
+}
