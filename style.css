@@ -19,9 +19,7 @@ body {
 
 body.loaded {
     opacity: 1;
-}
-
-.main-header {
+}.main-header {
     text-align: center;
     top: 0;
     position: fixed;
@@ -34,13 +32,9 @@ body.loaded {
     background: linear-gradient(to bottom, white 30%, transparent);
     pointer-events: none;
     margin-bottom: 5px;
-}
-
-.main-header.show {
+}.main-header.show {
     opacity: 1;
-}
-
-.gallery-container {
+}.gallery-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10vh;
@@ -52,9 +46,7 @@ body.loaded {
     padding-top: calc(50vh - 50vh / 2);
     padding-bottom: calc(50vh - 50vh / 2);
     box-sizing: border-box;
-}
-
-.image-row {
+}.image-row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
@@ -63,37 +55,25 @@ body.loaded {
     transition: opacity 0.5s ease-in;
     scroll-snap-align: center;
     min-height: 50vh;
-}
-
-.image-row.show {
+}.image-row.show {
     opacity: 1;
-}
-
-.image-item {
+}.image-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     aspect-ratio: 5 / 4;
-}
-
-.image-item img {
+}.image-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.caption {
+}.caption {
     text-align: center;
-    margin-top: 10px; /* Added spacing below images */
+    margin-top: 10px; 
     line-height: 1.4;
-}
-
-.caption-secondary {
+}.caption-secondary {
     font-size: smaller;
     color: #777;
-}
-
-.plus-sign {
+}.plus-sign {
     position: fixed;
     top: 19px;
     right: 20px;
@@ -101,18 +81,12 @@ body.loaded {
     cursor: pointer;
     z-index: 5;
     transition: transform 0.3s ease-in-out;
-}
-
-.plus-sign.rotate {
+}.plus-sign.rotate {
     transform: rotate(-45deg);
-}
-
-.plus-sign img {
+}.plus-sign img {
     width: 25px;
     height: auto;
-}
-
-.about-section {
+}.about-section {
     position: fixed;
     top: 0;
     left: 0;
@@ -122,13 +96,9 @@ body.loaded {
     z-index: 4;
     transform: translateY(-100%);
     transition: transform 0.3s ease-in-out;
-}
-
-.about-section.show {
+}.about-section.show {
     transform: translateY(0);
-}
-
-.about-section p {
+}.about-section p {
     padding: 0px;
     margin: 0px;
     margin-block-start: 0;
@@ -139,47 +109,70 @@ body.loaded {
     body {
         font-size: 16px;
     }
-.main-header {
+
+  .main-header {
         height: 20px;
-    background: linear-gradient(to bottom, white 90%, transparent);
-}
+        background: linear-gradient(to bottom, white 90%, transparent);
+    }
 
-.plus-sign {
-    top: 12px;
-}
+  .plus-sign {
+        top: 12px;
+    }
 
-.plus-sign img {
-    width: 16px;
-    height: auto;
-}
+  .plus-sign img {
+        width: 16px;
+        height: auto;
+    }
 
-.about-section {
-    padding-bottom: 80px;
-    background: linear-gradient(to bottom, white 70%, transparent);
-}
+  .about-section {
+        padding-bottom: 80px;
+        background: linear-gradient(to bottom, white 70%, transparent);
+    }
 
-    .gallery-container {
+  .gallery-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         overflow-y: auto;
-        height: 100vh;
+        height: 100vh; /* Set container height to 100vh */
         gap: 2vh;
-        padding: 5vh 0;
+        padding: 0; /* Remove container padding */
     }
 
-    .image-row {
+  .image-row {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        gap: 0;  /* Remove image gap */
+        min-height: 100vh;
+        padding: 0; /* Remove row padding */
+    }
+
+  .image-item {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
-        min-height: auto;
-        padding: 5vh 0;
+        width: 100%; /* Image item takes full container width */
+        margin-bottom: 20px;
     }
 
-    .image-item img {
-        width: auto;
-        max-width: 90vw;
-        max-height: 13vh;
+  .image-item img {
+        width: 100%; 
+        height: auto; 
+        max-width: 20vh;        
+        object-fit: contain;
+       
+    }
+
+  .caption {
+        text-align: center;
+        margin-top: 10px;
+        line-height: 1.2; 
+        max-height: 30px; /* Further limit caption height */
+        font-size: 14px;
+        overflow: hidden; /* Prevent caption overflow */
+        text-overflow: ellipsis; /* Add ellipsis for truncated text */
+        white-space: nowrap; /* Prevent captions from wrapping */
     }
 }
