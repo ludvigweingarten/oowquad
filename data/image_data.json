@@ -30,33 +30,65 @@
       ]
     },
     {
-      "client": "sj",
+      "client": "comis",
       "images": [
         {
-          "url": "images/sj/image1.gif",
+          "url": "images/comis/image1.png",
           "caption": {
-            "text": "Visual identity"
+            "text": "Product design"
           }
         },
         {
-          "url": "images/sj/image2.jpg",
+          "url": "images/comis/image2.jpg",
           "caption": {
             "theme": "Industry",
-            "text": "Fashion & Lifestyle"
+            "text": "Beauty"
           }
         },
         {
-          "url": "images/sj/image3.jpg",
+          "url": "images/comis/image3.jpg",
           "caption": {
             "theme": "Location",
-            "text": "Berlin"
+            "text": "Stockholm"
           }
         },
         {
-          "url": "images/sj/image4.jpg",
+          "url": "images/comis/video1.mp4",
+          "type": "video",
           "caption": {
             "theme": "Client",
-            "text": "Savoir Joaillerie"
+            "text": "Comis"
+          }
+        }
+      ]
+    },{
+      "client": "gk",
+      "images": [
+        {
+          "url": "images/gk/image1.jpg",
+          "caption": {
+            "text": "Edition"
+          }
+        },
+        {
+          "url": "images/gk/image2.jpg",
+          "caption": {
+            "theme": "Industry",
+            "text": "Real estate"
+          }
+        },
+        {
+          "url": "images/gk/image3.jpg",
+          "caption": {
+            "theme": "Location",
+            "text": "Stockholm"
+          }
+        },
+        {
+          "url": "images/gk/image4.jpg",
+          "caption": {
+            "theme": "Client",
+            "text": "Oscar Properties & Herzog de Meuron"
           }
         }
       ]
