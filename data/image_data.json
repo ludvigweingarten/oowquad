@@ -1,60 +1,65 @@
 {
-  "images": [
+  "rows": [
     {
-      "url": "images/image1.jpg",
-      "captions": {
-        "Capability": "Event sign", 
-        "Industry": "Arts & Culture",
-                "Location": "Stockholm",
-        "Client": "Design Sweden"
-
-      }
+      "client": "hbs",
+      "images": [
+        {
+          "url": "images/hbs/image1.jpg",
+          "caption": {
+            "text": "Catalogue design"
+          }
+        },
+        {
+          "url": "images/hbs/image2.jpg",
+          "caption": {
+            "text": "Real estate"
+          }
+        },
+        {
+          "url": "images/hbs/image3.jpg",
+          "caption": {
+            "text": "Palma de Mallorca"
+          }
+        },
+        {
+          "url": "images/hbs/image4.jpg",
+          "caption": {
+            "text": "House by Sanz"
+          }
+        }
+      ]
     },
     {
-      "url": "images/video1.mp4", 
-      "type": "video", 
-      "captions": {
-        "Capability": "Product", 
-        "Industry": "Beauty",
-        "Location": "Stockholm",
-        "Client": "Comis"
-      }
-    },
-    {
-      "url": "images/image2.jpg",
-      "captions": {
-        "Capability": "Jewellery box", 
-        "Industry": "Fashion & Lifestyle",
-        "Location": "Berlin",
-        "Client": "Savoir Joaillierie"
-      }
-    },
-    {
-      "url": "images/image3.jpg",
-      "captions": {
-        "Capability": "Book", 
-        "Industry": "Architecture",
-        "Location": "Stockholm",
-        "Client": "Architects Sweden"
-      }
-    },
-    {
-      "url": "images/image2.jpg",
-      "captions": {
-        "Capability": "Packaging", 
-        "Industry": "Fashion & Lifestyle",
-        "Client": "Savoir Joaillierie",
-        "Location": "Berlin"
-      }
-    },
-    {
-      "url": "images/image3.jpg",
-      "captions": {
-        "Capability": "Book design", 
-        "Industry": "Architecture",
-        "Client": "Architects Sweden",
-        "Location": "Stockholm"
-      }
+      "client": "sj",
+      "images": [
+        {
+          "url": "images/sj/image1.gif",
+          "caption": {
+            "text": "Visual identity"
+          }
+        },
+        {
+          "url": "images/sj/image2.jpg",
+          "caption": {
+            "theme": "Industry",
+            "text": "Fashion & Lifestyle"
+          }
+        },
+        {
+          "url": "images/sj/image3.jpg",
+          "caption": {
+            "theme": "Location",
+            "text": "Berlin"
+          }
+        },
+        {
+          "url": "images/sj/image4.jpg",
+          "caption": {
+            "theme": "Client",
+            "text": "Savoir Joaillerie"
+          }
+        }
+      ]
     }
   ]
 }
