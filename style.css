@@ -120,8 +120,14 @@ body.loaded {
   /* Hide the container initially */
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+  display: flex; /* Enable flexbox layout */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }.svg-container.show {
   opacity: 1;
+}.svg-inner {
+  margin: 20px;
+  width: 100%;
 }.oow-symbol {
   width: 100%;
   height: 100%;
@@ -133,7 +139,7 @@ body.loaded {
         font-size: 15px;
     }
 
-  .gallery-container {
+.gallery-container {
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -144,12 +150,12 @@ body.loaded {
         padding: 50px 20px;
     }
 
-  .main-header {
+.main-header {
         height: 60px;
         background: linear-gradient(to bottom, white 70%, transparent);
     }
 
-  .image-row {
+.image-row {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -159,12 +165,12 @@ body.loaded {
         width: 100%;
     }
 
-  .image-item {
+.image-item {
         aspect-ratio: 3 / 2;
     }
 
-  .image-item img,
-  .image-item video {
+.image-item img,
+.image-item video {
         width: 100%;
         height: 100%;
         object-fit: cover;

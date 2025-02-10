@@ -76,6 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // SVG Control
     const svgContainer = document.querySelector('.svg-container');
+    // Get the gallery container
   
     function showSvg() {
       svgContainer.classList.add('show');
@@ -85,18 +86,19 @@ document.addEventListener('DOMContentLoaded', () => {
       svgContainer.classList.remove('show');
     }
   
-    showSvg(); // Show initially
+    showSvg(); // Show the SVG initially
   
     let inactivityTimer;
     function resetTimer() {
       clearTimeout(inactivityTimer);
-      hideSvg();
-      inactivityTimer = setTimeout(showSvg, 10000);
+      hideSvg(); // Hide immediately on interaction
+      inactivityTimer = setTimeout(showSvg, 4000); // 3 seconds
     }
   
+    // Reset the timer on user interaction
     window.addEventListener('scroll', resetTimer);
     window.addEventListener('click', resetTimer);
     window.addEventListener('mousemove', resetTimer);
     document.addEventListener('keydown', resetTimer);
-    resetTimer(); // Initial timer setup
+    galleryContainer.addEventListener('scroll', resetTimer); // Add scroll listener to gallery container
   });
