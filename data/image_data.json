@@ -11,6 +11,16 @@
       }
     },
     {
+      "url": "images/video1.mp4", 
+      "type": "video", 
+      "captions": {
+        "Capability": "Product", 
+        "Industry": "Beauty",
+        "Location": "Stockholm",
+        "Client": "Comis"
+      }
+    },
+    {
       "url": "images/image2.jpg",
       "captions": {
         "Capability": "Jewellery box", 
@@ -22,10 +32,10 @@
     {
       "url": "images/image3.jpg",
       "captions": {
-        "Capability": "Book design", 
+        "Capability": "Book", 
         "Industry": "Architecture",
-        "Client": "Architects Sweden",
-        "Location": "Stockholm"
+        "Location": "Stockholm",
+        "Client": "Architects Sweden"
       }
     },
     {

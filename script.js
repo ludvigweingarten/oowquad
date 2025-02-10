@@ -10,20 +10,30 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch('data/image_data.json')
     .then(response => response.json())
     .then(data => {
-        data.images.forEach(image => {
+        data.images.forEach(item => { // Use 'item' instead of 'image'
           const imageRow = document.createElement('div');
           imageRow.classList.add('image-row');
   
-          for (const theme in image.captions) {
+          for (const theme in item.captions) {
             const imageItem = document.createElement('div');
             imageItem.classList.add('image-item');
   
-            const img = document.createElement('img');
-            img.src = image.url;
-            img.alt = `Image - ${theme}`;
-            imageItem.appendChild(img);
+            // Determine whether to create an image or video element
+            const mediaElement = document.createElement(item.type === 'video'? 'video': 'img'); 
+            mediaElement.src = item.url;
+            mediaElement.alt = `Media - ${theme}`; 
   
-            const captionLines = image.captions[theme].split('\n');
+            // Add video attributes if it's a video
+            if (item.type === 'video') {
+              mediaElement.autoplay = true;
+              mediaElement.controls = false;
+              mediaElement.loop = true;
+              mediaElement.muted = true;
+            }
+  
+            imageItem.appendChild(mediaElement);
+  
+            const captionLines = item.captions[theme].split('\n');
   
             captionLines.forEach((line, index) => {
               const caption = document.createElement('div');

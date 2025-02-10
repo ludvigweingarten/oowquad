@@ -62,10 +62,15 @@ body.loaded {
     flex-direction: column;
     align-items: center;
     aspect-ratio: 5 / 4; 
-}.image-item img {
+}.image-item img,.image-item video { /* Target both img and video */
     width: 100%;
     height: 100%;
     object-fit: cover;
+}.image-item video {
+    autoplay: true;
+    controls: false;
+    loop: true;
+    muted: true;
 }.caption {
     text-align: center;
     margin-top: 10px;
@@ -109,7 +114,7 @@ body.loaded {
         font-size: 16px;
     }
 
-  .gallery-container {
+.gallery-container {
         display: flex; 
         flex-direction: column;
         gap: 5vh;
@@ -119,7 +124,7 @@ body.loaded {
         height: auto; /* Allow container to grow with content */
     }
 
-  .image-row {
+.image-row {
         display: flex;
         flex-wrap: nowrap; 
         overflow-x: auto; 
@@ -130,19 +135,19 @@ body.loaded {
         width: 100%; 
     }
 
-  .image-item {
+.image-item {
         flex: 0 0 90vw; 
         scroll-snap-align: start; 
         min-width: 90vw;
     }
 
-  .image-item img {
+.image-item img {
         width: 100%;
         height: auto;
         object-fit: contain; 
     }
 
-  .main-header {
+.main-header {
         height: auto; /* Allow header to adjust height on mobile */
         padding: 10px 0; /* Reduce padding on mobile */
     }
