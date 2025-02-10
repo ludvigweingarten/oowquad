@@ -104,6 +104,11 @@ body.loaded {
 
 /* Media Query for Mobile - Adjust as needed */
 @media (max-width: 768px) {
+
+    body {
+        font-size: 16px;
+    }
+
   .gallery-container {
         display: flex; 
         flex-direction: column;
