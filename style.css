@@ -134,6 +134,10 @@ body.loaded {
   object-fit: contain; /* Maintain aspect ratio, fit within container */
 }
 
+svg path {
+    fill: blue; 
+  }
+
 @media (max-width: 768px) {
     body {
       font-size: 15px;
