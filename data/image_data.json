@@ -92,6 +92,37 @@
           }
         }
       ]
+    },{
+      "client": "mmag",
+      "images": [
+        {
+          "url": "images/mmag/image1.jpg",
+          "caption": {
+            "text": "Campaign"
+          }
+        },
+        {
+          "url": "images/mmag/image2.jpg",
+          "caption": {
+            "theme": "Industry",
+            "text": "Arts & Culture"
+          }
+        },
+        {
+          "url": "images/mmag/image3.png",
+          "caption": {
+            "theme": "Location",
+            "text": "Stockholm"
+          }
+        },
+        {
+          "url": "images/mmag/image4.jpg",
+          "caption": {
+            "theme": "Client",
+            "text": "Moderna Museet"
+          }
+        }
+      ]
     }
   ]
 }
