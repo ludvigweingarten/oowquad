@@ -126,7 +126,7 @@ body.loaded {
 }.svg-container.show {
   opacity: 1;
 }.svg-inner {
-  margin: 20px;
+  margin: 10px;
   width: 100%;
 }.oow-symbol {
   width: 100%;
@@ -163,6 +163,7 @@ body.loaded {
         min-height: 100vh;
         align-content: center;
         width: 100%;
+        padding-bottom: 50px;
     }
 
 .image-item {
